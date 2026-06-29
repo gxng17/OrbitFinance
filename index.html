@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FinanceOrbit</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<div class="card">
+
+
+<h1>FinanceOrbit</h1>
+
+<p class="subtitle">
+Vacation Membership Financing Calculator
+</p>
+
+
+
+<!-- ========================= -->
+<!-- SALE INFORMATION -->
+<!-- ========================= -->
+
+
+<h3>Sale Information</h3>
+
+
+<label>Total Amount</label>
+
+<input id="total" type="number" placeholder="35000">
+
+
+<label>Initial Investment</label>
+
+<select id="investmentPercent">
+
+<option value="0.40" selected>
+40%
+</option>
+
+<option value="0.10">
+10%
+</option>
+
+</select>
+
+
+
+<label>Administration Cost</label>
+
+<select id="admin">
+
+<option value="1920">
+$1,920
+</option>
+
+<option value="2290">
+$2,290
+</option>
+
+<option value="3039">
+$3,039
+</option>
+
+<!-- Add more administration costs here -->
+
+</select>
+
+
+
+
+
+<!-- ========================= -->
+<!-- FINCO -->
+<!-- ========================= -->
+
+
+<h3>Finco Financing</h3>
+
+
+<label>Flight Absorber</label>
+
+<select id="fly">
+
+<option value="no">
+Without Flight Absorber
+</option>
+
+<option value="yes">
+With Flight Absorber
+</option>
+
+</select>
+
+
+
+<label>Flight Absorber Value</label>
+
+<select id="flyValue">
+
+<option value="1980">
+$1,980
+</option>
+
+<option value="1300">
+$1,300
+</option>
+
+<option value="700">
+$700
+</option>
+
+</select>
+
+
+
+<label>Flight Absorber Quantity</label>
+
+<input id="flyQty" type="number" value="0" min="0">
+
+
+
+<label>Finco Payments</label>
+
+<select id="months">
+
+<option value="4">
+4 Months
+</option>
+
+<option value="5">
+5 Months
+</option>
+
+<option value="6">
+6 Months
+</option>
+
+<option value="7">
+7 Months
+</option>
+
+<option value="8" selected>
+8 Months
+</option>
+
+<option value="9">
+9 Months
+</option>
+
+<option value="10">
+10 Months
+</option>
+
+<option value="11">
+11 Months
+</option>
+
+<option value="12">
+12 Months
+</option>
+
+</select>
+
+
+
+
+
+<!-- ========================= -->
+<!-- BALANCE -->
+<!-- ========================= -->
+
+
+<h3>Balance Financing</h3>
+
+
+<label>Balance Term</label>
+
+<input id="balanceMonths" type="number" value="60">
+
+
+
+<label>Balance Interest (%)</label>
+
+<input id="balanceRate" type="number" step=".01" value="16.9">
+
+
+
+
+
+<!-- ========================= -->
+<!-- CURRENCY -->
+<!-- ========================= -->
+
+
+<h3>Currency</h3>
+
+
+<select id="currency">
+
+<option value="AUD">🇦🇺 AUD - Australian Dollar</option>
+
+<option value="AWG">🇦🇼 AWG - Aruban Florin</option>
+
+<option value="BBD">🇧🇧 BBD - Barbados Dollar</option>
+
+<option value="BMD">🇧🇲 BMD - Bermudian Dollar</option>
+
+<option value="BRL">🇧🇷 BRL - Brazilian Real</option>
+
+<option value="BSD">🇧🇸 BSD - Bahamian Dollar</option>
+
+<option value="CAD">🇨🇦 CAD - Canadian Dollar</option>
+
+<option value="CHF">🇨🇭 CHF - Swiss Franc</option>
+
+<option value="CLP">🇨🇱 CLP - Chilean Peso</option>
+
+<option value="CNY">🇨🇳 CNY - Chinese Yuan</option>
+
+<option value="COP">🇨🇴 COP - Colombian Peso</option>
+
+<option value="CRC">🇨🇷 CRC - Costa Rican Colón</option>
+
+<option value="CZK">🇨🇿 CZK - Czech Koruna</option>
+
+<option value="DKK">🇩🇰 DKK - Danish Krone</option>
+
+<option value="DOP">🇩🇴 DOP - Dominican Peso</option>
+
+<option value="EUR">🇪🇺 EUR - Euro</option>
+
+<option value="GBP">🇬🇧 GBP - British Pound</option>
+
+<option value="GTQ">🇬🇹 GTQ - Guatemalan Quetzal</option>
+
+<option value="HKD">🇭🇰 HKD - Hong Kong Dollar</option>
+
+<option value="HNL">🇭🇳 HNL - Honduran Lempira</option>
+
+<option value="ILS">🇮🇱 ILS - Israeli Shekel</option>
+
+<option value="INR">🇮🇳 INR - Indian Rupee</option>
+
+<option value="JMD">🇯🇲 JMD - Jamaican Dollar</option>
+
+<option value="JPY">🇯🇵 JPY - Japanese Yen</option>
+
+<option value="KRW">🇰🇷 KRW - South Korean Won</option>
+
+<option value="KYD">🇰🇾 KYD - Cayman Islands Dollar</option>
+
+<option value="MXN">🇲🇽 MXN - Mexican Peso</option>
+
+<option value="NIO">🇳🇮 NIO - Nicaraguan Córdoba</option>
+
+<option value="NOK">🇳🇴 NOK - Norwegian Krone</option>
+
+<option value="NZD">🇳🇿 NZD - New Zealand Dollar</option>
+
+<option value="PAB">🇵🇦 PAB - Panamanian Balboa</option>
+
+<option value="PEN">🇵🇪 PEN - Peruvian Sol</option>
+
+<option value="PLN">🇵🇱 PLN - Polish Złoty</option>
+
+<option value="QAR">🇶🇦 QAR - Qatari Riyal</option>
+
+<option value="RON">🇷🇴 RON - Romanian Leu</option>
+
+<option value="RUB">🇷🇺 RUB - Russian Ruble</option>
+
+<option value="SAR">🇸🇦 SAR - Saudi Riyal</option>
+
+<option value="SEK">🇸🇪 SEK - Swedish Krona</option>
+
+<option value="SGD">🇸🇬 SGD - Singapore Dollar</option>
+
+<option value="THB">🇹🇭 THB - Thai Baht</option>
+
+<option value="TRY">🇹🇷 TRY - Turkish Lira</option>
+
+<option value="TTD">🇹🇹 TTD - Trinidad & Tobago Dollar</option>
+
+<option value="USD" selected>🇺🇸 USD - US Dollar</option>
+
+<option value="UYU">🇺🇾 UYU - Uruguayan Peso</option>
+
+<option value="XCD">🇦🇬 XCD - East Caribbean Dollar</option>
+
+<option value="ZAR">🇿🇦 ZAR - South African Rand</option>
+
+</select>
+
+
+
+<button onclick="calculate()">
+
+Generate Quote
+
+</button>
+
+
+
+
+
+<!-- ========================= -->
+<!-- RESULTS -->
+<!-- ========================= -->
+
+
+<div class="result">
+
+
+<h2>
+Quote Summary
+</h2>
+
+
+<div id="output">
+
+Waiting for calculation...
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
